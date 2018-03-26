@@ -1,0 +1,8 @@
+<yield-example username="Chris">
+  <yield to="header">Hello { opts.username }</yield>
+  <yield to="body">This is inner text.</yield>
+</yield-example>
+
+<script src="https://cdn.jsdelivr.net/npm/riot@3.9.0/riot+compiler.min.js"></script>
+<script src="yield.tag" type="riot/tag"></script>
+<script>riot.mount("yield-example");</script>
