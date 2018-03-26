@@ -31,7 +31,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #fc0e49;
+  color: #a70013;
   line-height: 1;
   letter-spacing: 0.02em;
   text-transform: none; }
@@ -86,19 +86,19 @@ body {
  *********************************************/
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: #fc0e49; }
+  border-right-color: #a70013; }
 
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: #fc0e49; }
+  border-left-color: #a70013; }
 
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #fc0e49; }
+  border-bottom-color: #a70013; }
 
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
-  border-top-color: #fc0e49; }
+  border-top-color: #a70013; }
 
 .reveal .controls div.navigate-left.enabled:hover {
   border-right-color: #53555C; }
