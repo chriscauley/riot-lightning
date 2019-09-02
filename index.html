@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Riot.js Lightning Talk</title>
+    <title>Development Driven Testing</title>
 
-    <meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
+    <meta name="description" content=""/>
     <meta name="author" content="Chris Cauley">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -51,8 +51,8 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section>
-          <h1>A Quick Look at Riot.js</h1>
-          <h4>Web Components Made Easy</h4>
+          <h1>Development Driven Testing</h1>
+          <h4>A shortcut to 100% test coverage</h4>
           <p>
             By <a href="https://github.com/chriscauley/">Chris Cauley</a>
           </p>
@@ -61,118 +61,66 @@
         </section>
 
         <section>
-          <h2>Why Riot?</h2>
+          <h2>1. Write the code</h2>
+          <pre><code id="funcjs" class="js"></code></pre>
+          <script>write("func.js")</script>
+        </section>
+
+        <section>
+          <h2>2. Come up with test data</h2>
+          <pre><code id="datajs" class="js"></code></pre>
+          <script>write("data.js")</script>
+        </section>
+
+        <section>
+          <h2>3. Write the tests</h2>
+          <pre><code id="testsjs" class="js"></code></pre>
+          <script>write("tests.js")</script>
+        </section>
+
+        <section>
+          <h2>4. Tests pass, ship it!</h2>
+          <h4>#notMyJob</h4>
+          <video muted loop autoplay style="max-width: 55%">
+            <source src="https://i.imgur.com/Ruy7zy4.mp4"/>
+          </video>
+        </section>
+        
+        <section>
+          <h2>4. Verify with human eyes</h2>
+          <pre><code id="humanjs" class="js"></code></pre>
+          <script>write("human.js")</script>
+        </section>
+
+        <section>
+          <h2>Why not 100% test coverage?</h2>
           <ul>
-            <li>Lightweight - several times smaller than most libraries</li>
-            <li>Simple - it&rsquo;s just javascript, html, and css</li>
-            <li>Plays well with others</li>
-            <li>Actively developed (v4.0 coming soon)</li>
-            <li>Very stable</li>
+            <li><p>Time (often longer than writing code)</p></li>
+            <li><p>Hard to see the value</p></li>
+            <li><p>
+                Refactoring breaks tests
+            </p></li>
+            <li><p>
+                failed tests != broken code
+            </p></li>
+            <li><p>
+                passing tests != working code
+            </p></li>
           </ul>
         </section>
 
         <section>
-          <h2>Why not Riot?</h2>
-          <ul>
-            <li>No two way binding, state, or routing (but you can add it)</li>
-            <li>Maybe too lightweight for some</li>
-            <li>Community is not as large as others</li>
-            <li>Not as many 3rd party libraries</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Todo list example (via riotjs.com)</h2>
-          <pre><code id="todo1tag" class="html"></code></pre>
-          <script>write("todo1.tag")</script>
-          <pre><code id="todo1html" class="html"></code></pre>
-          <script>write("todo1.html")</script>
-          <a href="todo1.html" target="_blank">View Demo</a>
-        </section>
-
-        <section>
-          <h2>Additional Syntax Basics</h2>
-          <pre><code id="todo2tag" class="html"></code></pre>
-          <script>write("todo2.tag")</script>
-          <a href="todo2.html" target="_blank">View Demo</a>
-        </section>
-
-        <section>
-          <h2>Expressions (template syntax)</h2>
-          <ul>
-            <li>100% javascript</li>
-            <li>Single braces (can be changed to pretty much anything)</li>
-            <li>Scoped: this -&gt; parent tag -&gt; ... -&gt; window</li>
-            <li>Strings are HTML-escaped (to avoid XSS)</li>
-            <li>HTML attributes evaluate with special short-hand syntax</li>
-          </ul>
-          <pre><code id="expressionstag" class="javascript"></code></pre>
-          <script>write("expressions.tag")</script>
-        </section>
-
-        <section>
-          <h2>Tag Context Variables</h2>
-          <ul>
-            <li>In a tag, this.opts is an object passed in when a tab is mounted</li>
-            <li>Attributes on the tag overwrite values here</li>
-          </ul>
-          <pre><code id="contexttag" class="html"></code></pre>
-          <script>write("context.tag")</script>
-        </section>
-
-        <section>
-          <h2>Lifecycle Events</h2>
-          <ul>
-            <li>Custom JS executed at every stage of a tags existence</li>
-            <li>before-mount/mount - When riot.mount is called</li>
-            <li>update/updated - After mount and any time an internal event happens</li>
-            <li>before-unmount/unmount - When the tag is destroyed</li>
-          </ul>
-          <pre><code id="lifecycletag" class="html"></code></pre>
-          <script>write("lifecycle.tag")</script>
-        </section>
-
-        <section>
-          <h2>Mixins</h2>
-          <ul>
-            <li>Re-use code across tags</li>
-          </ul>
-          <pre><code id="mixinstag" class="javascript"></code></pre>
-          <script>write("mixins.tag")</script>
-        </section>
-
-        <section>
-          <h2>Yielding</h2>
-          <pre><code id="yieldtag" class="html"></code></pre>
-          <script>write("yield.tag")</script>
-          <pre><code id="yieldhtml" class="html"></code></pre>
-          <script>write("yield.html")</script>
-          <a href="yield.html" target="_blank">View Demo</a>
-        </section>
-
-        <section>
-          <h2>Yielding (cont.)</h2>
-          <pre><code id="yield2tag" class="html"></code></pre>
-          <script>write("yield2.tag")</script>
-          <pre><code id="yield2html" class="html"></code></pre>
-          <script>write("yield2.html")</script>
-          <a href="yield.html" target="_blank">View Demo</a>
-        </section>
-
-        <section>
-          <h2>In conclusion</h2>
-          <ul>
-            <li>Riot is very simple and quick to learn</li>
-            <li>If you already know Javascript, you pretty much know riot</li>
-            <li>Questions?</li>
-          </ul>
+          <div class="flexy">
+            <div class="box">Code</div>
+            <div class="box">Data</div>
+            <div class="box">Test</div>
+            <div class="box">Do</div>
+          </div>
         </section>
 
       </div>
-      <h4 style="position: fixed; bottom: 0; right: 0">chriscauley.github.io/riot-lightning</h4>
       <footer>
         <div class="copyright">
-          A Quick Look at Riot.js by Chris Cauley
         </div>
       </footer>
     </div>
@@ -183,7 +131,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/htmlbars.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/css.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/qtcreator_dark.min.css" />
+    <link rel="stylesheet" href="dist/arduino.css" />
     <script src="main.js"></script>
   </body>
 </html>

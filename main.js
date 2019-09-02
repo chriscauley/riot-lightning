@@ -18,7 +18,7 @@ function is_ready() {
     }
     element.innerText = out.join("\n");
   });
-  hljs.initHighlightingOnLoad();
+  hljs.initHighlighting();
 
   // Full list of configuration options available here:
   // https://github.com/hakimel/reveal.js#configuration
@@ -35,7 +35,6 @@ function is_ready() {
       { src: 'dist/js/classList.js', condition: function() { return !document.body.classList; } },
       { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
       { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      //{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
       { src: 'plugin/zoom-js/zoom.js', async: true },
       { src: 'plugin/notes/notes.js', async: true },
       { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }

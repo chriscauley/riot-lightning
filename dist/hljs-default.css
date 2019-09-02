@@ -1,0 +1,66 @@
+body .reveal .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #f0f0f0;
+}
+body .reveal .hljs,
+body .reveal .hljs-subst {
+  color: #444444;
+}
+body .reveal .hljs-comment {
+  color: #888888;
+}
+body .reveal .hljs-keyword,
+body .reveal .hljs-attribute,
+body .reveal .hljs-selector-tag,
+body .reveal .hljs-meta-keyword,
+body .reveal .hljs-doctag,
+body .reveal .hljs-name {
+  font-weight: bold;
+}
+body .reveal .hljs-type,
+body .reveal .hljs-string,
+body .reveal .hljs-number,
+body .reveal .hljs-selector-id,
+body .reveal .hljs-selector-class,
+body .reveal .hljs-quote,
+body .reveal .hljs-template-tag,
+body .reveal .hljs-deletion {
+  color: #880000;
+}
+body .reveal .hljs-title,
+body .reveal .hljs-section {
+  color: #880000;
+  font-weight: bold;
+}
+body .reveal .hljs-regexp,
+body .reveal .hljs-symbol,
+body .reveal .hljs-variable,
+body .reveal .hljs-template-variable,
+body .reveal .hljs-link,
+body .reveal .hljs-selector-attr,
+body .reveal .hljs-selector-pseudo {
+  color: #bc6060;
+}
+body .reveal .hljs-literal {
+  color: #78a960;
+}
+body .reveal .hljs-built_in,
+body .reveal .hljs-bullet,
+body .reveal .hljs-code,
+body .reveal .hljs-addition {
+  color: #397300;
+}
+body .reveal .hljs-meta {
+  color: #1f7199;
+}
+body .reveal .hljs-meta-string {
+  color: #4d99bf;
+}
+body .reveal .hljs-emphasis {
+  font-style: italic;
+}
+body .reveal .hljs-strong {
+  font-weight: bold;
+}
